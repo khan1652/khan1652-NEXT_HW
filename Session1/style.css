@@ -1,0 +1,260 @@
+.body {
+  width: 375px;
+  height: 812px;
+  position: relative;
+  display:flex;
+  flex-direction:column;
+}
+.block1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width:100%
+}
+.user_id {
+  position: absolute;
+  width: 96px;
+  height: 19px;
+  left: 75px;
+  top: 41px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.back_arrow {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  top: 41px;
+  left: 30px;
+}
+.setting {
+  position: absolute;
+  width: 1.38px;
+  height: 12.18px;
+  top: 44px;
+  left: 349.27px;
+}
+.block2{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width:100%;
+}
+.profile{
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  left: 16px;
+  top: 83px; 
+  border-radius: 70%;
+}
+.top{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+.bottom{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 43px;
+  height: 37px;
+  left: 152px;
+  top: 109px;
+}
+.followers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 52px;
+  height: 37px;
+  left: 225px;
+  top: 109px;
+}
+.following{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 52px;
+  height: 37px;
+  left: 307px;
+  top: 109px;
+}
+.block3{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width:100%;
+}
+.line1{
+  position: absolute;
+width: 149px;
+height: 16px;
+left: 16px;
+top: 178px;
+
+font-family: 'Roboto';
+font-size: 14px;
+line-height: 16px;
+}
+.line2{
+  position: absolute;
+width: 187px;
+height: 16px;
+left: 16px;
+top: 196px;
+
+font-family: 'Roboto';
+font-size: 14px;
+line-height: 16px;
+}
+.line3{
+  position: absolute;
+width: 149px;
+height: 16px;
+left: 16px;
+top: 214px;
+
+font-family: 'Roboto';
+font-size: 14px;
+line-height: 16px;
+color: #0F4D73;
+}
+.block4{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width:100%;
+}
+.box1{
+  position: absolute;
+  width: 145px;
+  height: 25px;
+  left: 16px;
+  top: 238px;
+
+  background: #1877F2;
+  box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.follow{
+  position: absolute;
+  width: 34.8px;
+  height: 12px;
+  left: 71px;
+  top: 245px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.message{
+  position: absolute;
+  width: 145px;
+  height: 25px;
+  left: 175px;
+  top: 238px;
+} 
+.box3{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 334px;
+  top: 238px;
+
+  background: #DFDFDF;
+  border-radius: 5px;
+}
+.plus1{
+  position: absolute;
+  width: 6.59px;
+  height:7.22px;
+  top:243px;
+  left:344.61px;
+}
+.plus2{
+  position: absolute;
+  width: 14px;
+  height: 5.41px;
+  top:251.12px;
+  left:341px;
+}
+.plus3{
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top:246px;
+  left:338px;
+}
+.block5{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width:100%;
+}
+.one{
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  left: 50px;
+  top: 298px;
+}
+.two{
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  left: 177px;
+  top: 298px;
+}
+.three{
+  position: absolute;
+  width: 21px;
+  height: 22.5px;
+  left: 305px;
+  top: 297px;
+}
+.block6{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width:100%;
+}
+.photo{
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  left: 0px;
+  top: 350px;
+}
+.block7{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 325px;
+  height: 50px;
+  position: absolute;
+  left: 25px;
+  top:730px;
+  z-index:1;
+}
