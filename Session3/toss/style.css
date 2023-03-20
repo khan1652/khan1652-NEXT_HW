@@ -1,0 +1,123 @@
+body{
+    width: 375px;
+    height: 812px;
+    background-color: rgb(244, 244, 244);
+    position: relative;
+    border: 1px dotted black;
+}
+.block1{
+ display:flex;
+}
+.time{
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 12px;
+ line-height: 15px;
+ position: absolute;
+ left: 21px;
+}
+.wifi{
+ display:flex;
+ position: absolute;
+ right: 21px;
+}
+.wifi img{
+    width: 24px;
+    height: 24px;
+}
+.block2 img{
+    width: 109px;
+    height: 34px;
+    position: absolute;
+    left: 28px;
+    top:66px;
+}
+.block3 .back{
+    position: absolute;
+    width: 320px;
+    height: 60px;
+    left: 28px;
+    top: 129px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block3 .name{    
+    font-family: 'Noto Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    left: 18px;
+}
+.block3 img{
+    width: 28.75px;
+    height: 36px;
+    position: absolute;
+    left: 286px;
+}
+
+.block4 .back{
+    position: absolute;
+    width: 320px;
+    height: 453px;
+    left: 28px;
+    top: 209px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.block4 .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.block4 .name{    
+    font-family: 'Noto Sans';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    left: 18px;
+    top: 20.4px;
+}
+.block4 .top img{
+    width: 28.75px;
+    height: 36px;
+    position: absolute;
+    left: 286px;
+    top: 20.4px;
+}
+.block4 .down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 58px;
+    left: 13px;
+}
+.block4 .down img{
+    width: 294px;
+    height:55px;
+}
+
+.block5 .back{
+    display: flex;
+    background-color: white;
+    bottom: 0;
+    position:absolute;
+    justify-content: space-around;
+    width: 375px;
+    height: 82px;
+    align-items: center;
+}
+.block5 img{
+    width:38.22px;
+    height:55px;
+}
