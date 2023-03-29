@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static %}
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'info' %}">info</a>
+        <span>/</span>
+        <a href="{% url 'project' %}">project</a>
+    </header>
+
+    <h3 class="projectTitle">1. 토스 클론</h3>
+    <div class="tossClone">
+        <div class="block1">
+            <div class="time">9:12</div>
+            <div class="wifi">
+                <img src="{% static 'img/one.png' %}" />
+                <img src="{% static 'img/two.png' %}" />
+                <img src="{% static 'img/three.png' %}" />
+            </div>
+        </div>
+    
+        <div class="block2">
+            <img src="{% static 'img/logo.png' %}"/>
+        </div>
+    
+        <div class="block3">
+            <div class="back">
+                <div class="name">토스뱅크</div>
+                <img src="{% static 'img/arrow.png' %}"/>
+            </div>
+        </div>
+    
+        <div class="block4">
+            <div class="back">
+                <div class="top">
+                    <div class="name">자산</div>
+                    <img src="{% static 'img/arrow.png' %}"/>
+                </div>
+                <div class="down">
+                    <img src="{% static 'img/etc1.png' %}"/>
+                    <img src="{% static 'img/etc2.png' %}"/>
+                    <img src="{% static 'img/etc3.png' %}"/>
+                    <img src="{% static 'img/etc4.png' %}"/>
+                    <img src="{% static 'img/etc5.png' %}"/>
+                    <img src="{% static 'img/etc6.png' %}"/>
+                </div>
+            </div>
+        </div>
+    
+        <div class="block5">
+            <div class="back">
+                <img src="{% static 'img/un.png' %}"/>
+                <img src="{% static 'img/deux.png' %}"/>
+                <img src="{% static 'img/trois.png' %}"/>
+                <img src="{% static 'img/quatre.png' %}"/>
+                <img src="{% static 'img/cinq.png' %}"/>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

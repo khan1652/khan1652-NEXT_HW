@@ -1,0 +1,49 @@
+*{
+    background-color:black;
+}
+header{
+    height:50px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color:black;
+    opacity:0.8;
+    z-index:2;
+    text-align: center;
+}
+header a, span{
+    color: white;
+    font-family: cursive;
+    text-decoration: none;
+}
+   
+.title{
+    position: absolute;
+    left: 15%;
+    top:15%;
+}
+.title h1{
+    color: white;
+    font-family: fantasy;
+}
+.one{
+    background-color: yellow;
+    width:200px;
+    height:20px;
+}
+.two{
+    background-color: yellow;
+    width:250px;
+    height:20px;
+}
+.skill{
+    color:white;
+    font-family: cursive;
+    position: absolute;
+    left: 15%;
+    top:70%;
+}
+.group{
+    word-spacing: 20px;
+}
