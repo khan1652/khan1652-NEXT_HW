@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'list.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article List</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h2>글 전체 목록</h2>
+            <ul>
+                {% for article in articles %}
+                
+                <li><a href="{% url 'detail' article.id %}">{{article.title}}</a></li>
+                {% endfor %}
+            </ul>
+            <a class="next" href="{% url 'new' %}">글 쓰러 가기</a>
+        </div>
+
+        <div class="category">
+            <h2>카테고리</h2>
+            <ul>
+               {% for categories, num in list %} 
+               <li><a href="{% url 'category' categories %}">{{categories}}</a></li>
+               <h5>글 개수: {{num}}</h5>
+               <br/>
+               {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
