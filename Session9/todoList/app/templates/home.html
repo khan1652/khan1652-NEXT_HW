@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Todo-List</h1>
+
+    <h3>Undone</h3>
+    <ol>
+        {% for todo in todos %} 
+        <li>
+         {% if todo.outdated == True %}
+         <div>
+            <a href="{% url 'detail' todo.id %}">{{todo.title}}</a>
+            [D- ({{todo.d_day}}) OUTDATED]<br/>
+            <a href="{% url 'do' todo.id %}">✔Done</a>
+         </div>
+         {% endif %}
+         
+         {% if todo.outdated == False %}
+         <div>
+            <a href="{% url 'detail' todo.id %}">{{todo.title}}</a>
+            [D- {{todo.d_day}}]<br/>
+            <a href="{% url 'do' todo.id %}">✔Done</a>
+         </div>
+         {% endif %}
+        </li>
+        {% endfor %}
+    </ol>
+    
+    
+
+    <h3>Done</h3>
+    <ul>
+        {% for todo in done %}
+        <li>
+            <a href="{% url 'detail' todo.id %}">{{todo.title}}</a>
+            <br/>
+        </li>
+        {% endfor %}
+    </ul>
+    <br/>
+
+    <a href="{% url 'new' %}">Add todo</a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(0, 0, 0, 0.048);
+    font-family: Century Gothic, sans-serif;
+}
+h1, h3{
+    background-color: rgba(251, 255, 0, 0.311);
+    width: fit-content;
+}
+a{
+    text-decoration: none;
+}
