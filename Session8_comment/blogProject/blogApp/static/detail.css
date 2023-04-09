@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+}
+.next{
+    text-decoration: underline;
+}
+.content{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.comments{
+    padding: 30px;
+    background-color: rgb(255, 183, 0);
+    border-radius: 20px;
+}
+.recomments{
+    text-indent:10%;
+}

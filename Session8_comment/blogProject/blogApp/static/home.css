@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+}
+.next{
+    background-color: rgba(251, 255, 0, 0.311);
+    text-decoration:underline;
+}
+.content{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.category{
+    padding: 30px;
+    background-color: rgb(255, 183, 0);
+    border-radius: 20px;
+}

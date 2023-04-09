@@ -1,0 +1,30 @@
+{% extends 'base.html' %} 
+
+{% block css %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}" />
+{% endblock %} 
+
+{% block content %}
+<h2>글 수정 페이지</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <div>카테고리</div>
+            <select name="category">
+                {% for category in categories %}
+                <option value="{{category}}">{{category}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <div>글 제목</div>
+            <input type="text" name="title" value="{{article.title}}"/>
+        </div>
+        <div>
+            <div>글 내용</div>
+            <textarea name="content" cols="30" rows="10">{{article.content}}</textarea>
+        </div>
+        <button type="submit">수정 완료</button>
+    </form>
+{% endblock %}

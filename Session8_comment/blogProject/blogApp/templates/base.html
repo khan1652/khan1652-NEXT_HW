@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %} {% endblock css %}
+    <title>💛한별's BLOG💛</title>
+</head>
+<body>
+   <div class="container">{% block content %} {% endblock content %}</div>
+   <div class="footer">
+    <div class="copyright">
+        Blog <br/>
+        Copyright 2023. HanByul Kim. All Rights Reserved
+    </div>
+   </div>
+</body>
+</html>
