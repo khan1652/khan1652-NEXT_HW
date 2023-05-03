@@ -1,0 +1,32 @@
+ul {
+    list-style: none;
+    padding-left: 0;
+  }
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+    color: #898989;
+  }
+  .navbar__menu {
+    display: flex;
+    padding-left: 0;
+  }
+  
+  .navbar__menu .navbar__menu__item {
+    margin: 0 4px;
+    cursor: pointer;
+    color: #898989;
+    font-size: 50px;
+  }
+  
+  .navbar__menu .navbar__menu__item a {
+    padding: 8px 16px;
+  }
+  a {
+    text-decoration: none;
+
+  }

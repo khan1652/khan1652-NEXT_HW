@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(0, 0, 0, 0.089);
+    font-family: Century Gothic, sans-serif;
+    position: relative;
+}
+
+.navbar__logo {
+    color: #898989;
+    padding: 8px 16px;
+    font-size: 24px;
+  }
+ 

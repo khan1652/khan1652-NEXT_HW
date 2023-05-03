@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %} {% block title %} HOME{% endblock %} {% block css%}
+{% load static %}
+{% endblock %} {% block content %}
+{% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+<div>
+    <ul>
+        {% for post in posts %}
+        <li><a href="{% url 'blog:detail' post.pk %}">{{post.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'blog:new' %}">New Post</a>
+</div>
+{% endblock %}

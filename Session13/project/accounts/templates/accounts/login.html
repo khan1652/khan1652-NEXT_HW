@@ -1,0 +1,15 @@
+{% extends 'accounts/base.html' %} {% block title %} LOG IN{% endblock %} {% block css%}
+{% load static %}
+{% endblock %} {% block content %}
+{% if error %}
+        <p>{{error}}</p>
+    {% endif %}
+    <form method="POST">
+        {% csrf_token %}
+        {{	form.as_p }}
+        <input required name="username" type="text" placeholder="ID"/>
+        <input required name="password" type="password" placeholder="PW"/>
+        <button type="submit">submit</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{% extends 'accounts/base.html' %} {% block title %} ACCOUNTS{% endblock %} {% block css%}
+{% load static %}
+<link rel="stylesheet" href="{% static 'accounts/home.css' %}" />
+{% endblock %} {% block content %}
+    <nav id="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">
+            <a href="{% url 'blog:home' %}">Blog</a>
+          </li>
+          {% if user.is_authenticated %}
+          <span class="navbar__menu__item">Hello, {{user.username}}</span>
+          <li class="navbar__menu__item">
+            <a href="{% url 'accounts:logout'%}">Log out</a>
+          </li>
+          {% else %}
+          <li class="navbar__menu__item">
+            <a href="{% url 'accounts:login'%}">Log in</a>
+          </li>
+          <li class="navbar__menu__item">
+            <a href="{% url 'accounts:signup'%}">Sign up</a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+{% endblock %}
